@@ -1,0 +1,228 @@
+exports.run = (bot, message, args) => {
+  try {
+    let bye = [
+      {
+        duck:
+          "https://cdn.discordapp.com/attachments/578989377527742464/578991314725502996/17-05-2019_200244.png"
+      },
+      {
+        duck:
+          "https://cdn.discordapp.com/attachments/578989377527742464/578991415565090849/2019-03-23_222255.png"
+      },
+      {
+        duck:
+          "https://cdn.discordapp.com/attachments/578989377527742464/578991437006241793/2019-03-25_135015.png"
+      },
+      {
+        duck:
+          "https://cdn.discordapp.com/attachments/578989377527742464/578991467230527489/2019-03-25_145924.png"
+      },
+      {
+        duck:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ducks_in_plymouth%2C_massachusetts.jpg/275px-Ducks_in_plymouth%2C_massachusetts.jpg"
+      },
+      {
+        duck:
+          "https://fermoved.ru/wp-content/uploads/2017/06/utki-shipayut-perya-drug-u-druga-600x450.jpg"
+      },
+      {
+        duck:
+          "https://regnum.ru/uploads/pictures/news/2018/10/24/regnum_picture_1540353790120024_big.jpg"
+      },
+      {
+        duck:
+          "https://scientificrussia.ru/data/auto/material/large-preview-d215.jpg"
+      },
+      {
+        duck:
+          "https://www.openbusiness.ru/upload/iblock/a35/razvedenie-utok.jpg"
+      },
+      {
+        duck:
+          "https://nashzeleniymir.ru/wp-content/uploads/2016/01/%D0%A3%D1%82%D0%B0%D0%BA%D0%B0-%D1%84%D0%BE%D1%82%D0%BE.jpg"
+      },
+      {
+        duck:
+          "https://babushkinadacha.ru/wp-content/uploads/2017/08/1918w-1.jpg"
+      },
+      { "duck:": "http://oxothik.ru/userimages/_1.jpg" },
+      {
+        duck:
+          "https://nashzeleniymir.ru/wp-content/uploads/2016/01/%D0%A3%D1%82%D0%BA%D0%B0-%D1%81-%D1%83%D1%82%D1%8F%D1%82%D0%B0%D0%BC%D0%B8-%D1%84%D0%BE%D1%82%D0%BE.jpg"
+      },
+      { duck: "https://i.ytimg.com/vi/HfjxmXEkvFo/maxresdefault.jpg" },
+      {
+        duck:
+          "http://hitagro.ru/wp-content/uploads/2012/11/%D0%A3%D1%82%D0%BA%D0%B8-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8%D0%B5.jpg"
+      },
+      {
+        duck: "https://rynok-apk.ru/preview/original/pic/100659_Fp23aug17.jpg"
+      },
+      { duck: "http://ferma-nasele.ru/wp-content/uploads/2017/07/1-38.jpg" },
+      { duck: "https://www.hunting.ru/files/image/vidy-utok-foto/ogar.jpg" },
+      {
+        duck:
+          "https://ferma.guru/images/227274/selezen-hutschenreuther-germaniya.jpg"
+      },
+      {
+        duck:
+          "https://nashzeleniymir.ru/wp-content/uploads/2016/01/%D0%A3%D1%82%D0%BA%D0%B0-%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D0%B8%D0%BD%D0%BA%D0%B0-%D1%84%D0%BE%D1%82%D0%BE.jpg"
+      },
+      {
+        duck:
+          "https://vistanews.ru/uploads/posts/2018-04/1523094760_shoveller-2057361_960_720.sicxt.jpg"
+      },
+      {
+        duck:
+          "https://cdn.discordapp.com/attachments/578989377527742464/579298438030688274/ytka.png"
+      },
+      {
+        duck:
+          "http://1.bp.blogspot.com/-yiuECfHsYq8/Uw9LUNgMLOI/AAAAAAAAOjM/b8PiZB9_JQI/s1600/%D1%83%D1%82%D0%BA%D0%B0.jpg"
+      },
+      {
+        duck:
+          "http://n1s1.hsmedia.ru/52/bc/05/52bc058ca615dd1193673a3d7be39e49/440x326_21_16efc109acb2b48009c9497e9564ab45@690x460_0xc0a8392b_949800641501063422.jpeg"
+      },
+      {
+        duck:
+          "https://o-prirode.ru/wp-content/uploads/2017/08/utka-e1501674762321.jpg"
+      },
+      {
+        duck:
+          "https://cs.pikabu.ru/post_img/2013/09/09/6/1378716941_571938148.jpg"
+      },
+      {
+        duck:
+          "https://st.depositphotos.com/1007514/2506/i/450/depositphotos_25067721-stock-photo-mallard-duck-with-clipping-path.jpg"
+      },
+      {
+        duck:
+          "http://ecofazenda.ru/thumb/XvZRYRtqViB6WFZC0Ym3CQ/580r450/734167/%D0%B7%D0%B5%D1%80%D0%BA%D0%B0%D0%BB%D1%8C_%D1%83%D1%82%D0%BA%D0%B8.jpg"
+      },
+      {
+        duck:
+          "http://zoogalaktika.ru/assets/images/aves/anseriformes/anatinae/tadorna-ferruginea/small/tadorna-ferruginea_small_01.jpg"
+      },
+      {
+        duck:
+          "http://zoogalaktika.ru/assets/images/aves/anseriformes/anatinae/tadorna-ferruginea/small/tadorna-ferruginea_small_01.jpg"
+      },
+      {
+        duck:
+          "https://www.moya-planeta.ru/files/holder/64/cd/64cd481c20591ba9493a60dce17fbacf.jpg"
+      },
+      {
+        duck:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Male_mallard_flight_-_natures_pics.jpg/1200px-Male_mallard_flight_-_natures_pics.jpg"
+      },
+      {
+        duck:
+          "https://www.fermeru.pro/wp-content/uploads/2016/09/Svensk_bl%C3%A5_anka.jpg"
+      },
+      {
+        duck:
+          "https://gorod55.ru/attachments/32f7f9c9afd0351996ef32510881848bd0cebe9f/store/fill/360/200/74943cf4d6edc0418415de241419e5f59321f17be925a9d01cf38d1755c3/5c577-2b27-4c7a-bd70-db1376d926ee_big.jpeg"
+      },
+      {
+        duck:
+          "https://images11.popmeh.ru/upload/img_cache/d77/d772e0da9234b788b34710792de0970d_ce_2560x1365x0x38_cropped_800x427.jpg"
+      },
+      {
+        duck:
+          "http://profermu.com/wp-content/uploads/2016/07/3001006-e1454169389702.jpeg"
+      },
+      { duck: "https://img.pravda.ru/image/article/2/9/3/394293.jpeg" },
+      { duck: "http://onfermer.ru/wp-content/uploads/2016/04/1-929.jpg" },
+      {
+        duck: "https://wild-animals.ru/custom/thumb/img/15118001804_uid_421.jpg"
+      },
+      {
+        duck:
+          "https://cs9.pikabu.ru/post_img/big/2017/08/04/7/1501847241189425080.png"
+      },
+      {
+        duck: "https://s9.stc.all.kpcdn.net/share/i/12/10252189/inx960x640.jpg"
+      },
+      {
+        duck:
+          "https://upload.wikimedia.org/wikipedia/commons/4/42/Muscovy_Duck_-_Cairina_moschata_2.jpg"
+      },
+      {
+        duck:
+          "https://upload.wikimedia.org/wikipedia/commons/4/42/Muscovy_Duck_-_Cairina_moschata_2.jpg"
+      },
+      { duck: "https://ferma.guru/images/231324/dikie-utki.jpg" },
+      { duck: "https://foodandhealth.ru/wp-content/uploads/2016/07/utka.jpg" },
+      { duck: "https://zveri.guru/images/250070/opisanie-chernoi-utki.jpg" },
+      {
+        duck:
+          "http://agroinfo.kz/wp-content/uploads/2016/04/%D0%B7%D0%B5%D1%80%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%83%D1%82%D0%BA%D0%B8.jpg"
+      },
+      {
+        duck:
+          "https://images.aif.ru/012/982/0afba417d06500035f05c62baa5a925b.jpg"
+      },
+      {
+        duck:
+          "https://o-prirode.ru/wp-content/uploads/2017/08/opisanie-utok-e1501675960899.jpg"
+      },
+      {
+        duck:
+          "https://cdn.pixabay.com/photo/2016/07/12/22/24/duck-1513259_1280.jpg"
+      },
+      {
+        duck:
+          "https://c.pxhere.com/photos/99/87/duck_bird_animal_water_bird_nature_close-510572.jpg!d"
+      },
+      {
+        duck:
+          "https://c.pxhere.com/photos/96/bd/ducks_smooch_water_bird_poultry_plumage_water_feather_bird-1051880.jpg!d"
+      },
+      {
+        duck:
+          "https://cdn.pixabay.com/photo/2015/09/23/16/47/duck-954051_1280.jpg"
+      },
+      {
+        duck:
+          "https://cdn.pixabay.com/photo/2015/09/23/16/47/duck-954051_1280.jpg"
+      },
+      {
+        duck:
+          "https://cdn.pixabay.com/photo/2016/09/20/20/13/duck-1683317_1280.jpg"
+      },
+      {
+        duck:
+          "https://wallbox.ru/wallpapers/main/201120/134d4af42a8369c4baf9ab9609e3df27.jpg"
+      },
+      {
+        duck:
+          "https://wallbox.ru/wallpapers/main/201120/134d4af42a8369c4baf9ab9609e3df27.jpg"
+      },
+      {
+        duck:
+          "https://wallbox.ru/wallpapers/main/201120/134d4af42a8369c4baf9ab9609e3df27.jpg"
+      },
+      {
+        duck:
+          "https://cdn.pixabay.com/photo/2016/06/19/22/08/duck-1467748_1280.jpg"
+      },
+      {
+        duck:
+          "https://im0-tub-ru.yandex.net/i?id=7bb71a0fb26aa02ed527558e434117e1&n=13"
+      }
+    ];
+    let gif = bye[Math.floor(Math.random() * bye.length)];
+    message.channel.send(
+      new Discord.RichEmbed().setColor(colors).setImage(gif.duck)
+    );
+  } catch (err) {
+    message.channel.send(
+      new Discord.RichEmbed().setColor("RED").addField(ERROR, err.message)
+    );
+    console.log(err.stack);
+  }
+};
+exports.command = {
+  name: "duck"
+};

@@ -1,0 +1,15 @@
+  {
+  "colors": "#FFFF00",
+  "ServerID": "546736610209955850",
+  "ChannelsDM": "605391844058333185",
+  "ReactionChannelID": "552594486463561729",
+  "ChannelLogsID": "552550888460386307",
+  "DefaultPrefix": "!",
+  "BotOwnerID": "517331770656686080",
+  "BotURL": "https://discordapp.com/oauth2/authorize?client_id=558522292934541312&scope=bot&permissions=2146958847",
+  "MuteRoleName": "DuckMuted",
+  "ReportsChannelID": "577764748741836801",
+  "MessageLog": "631870215277510656",
+  "categoryID": "631917636535713792",
+  "voiceID": "631917890458615808"
+}

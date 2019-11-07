@@ -1,0 +1,48 @@
+{
+  "name": "quackduck",
+  "version": "6.2.8",
+  "description": "Уточка.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkVessel/QuackDuck-discord.js.git"
+  },
+  "keywords": [
+    "Node.JS",
+    "JavaScript",
+    "discord.js",
+    "bot",
+    "Discord",
+    "QuackDuck",
+    "MongoDB"
+  ],
+  "engines": {
+    "node": "10.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "author": "DarkVessel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarkVessel/QuackDuck-discord.js/issues"
+  },
+  "homepage": "https://github.com/DarkVessel/QuackDuck-discord.js#readme",
+  "dependencies": {
+    "ascii-art": "^1.5.1",
+    "canvas": "^2.6.0",
+    "canvas-constructor": "^3.1.0",
+    "discord.js": "^11.5.1",
+    "discord.js-minesweeper": "^1.0.5",
+    "discore.js": "^0.9.2",
+    "dorami": "^1.0.4",
+    "dotenv": "^8.2.0",
+    "dream.log": "^1.0.0",
+    "node-fetch": "^2.6.0",
+    "strftime": "^0.10.0",
+    "superagent": "^5.1.0",
+    "translate": "^1.1.0",
+    "translate-api": "^0.3.18"
+  }
+}
