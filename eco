@@ -7,11 +7,56 @@ module.exports.run = async (bot, message, args) => {
 
 
     if (!message.member.hasPermission('ADMINISTRATOR')) {
-        return message.reply('У вас недостаточно прав')
+        return message.reply
+        
+        
+            new Discord.RichEmbed()
+
+              .setDescription(
+
+                "🚫 | **У вас недостаточно прав для выполнения этой команды!**"
+
+              )
+
+              .setColor("RED")
+
+              .setTimestamp()
+
+              .setFooter(
+
+                message.author.username,
+
+                message.author.displayAvatarURL
+
+              )
+
+          );
     }
 
-    if (!args[0]) return message.reply('Укажите число')
-    if (isNaN(args[0])) return message.reply('Укажите число, больше 0')
+    if (!args[0]) return message.reply
+    new Discord.RichEmbed()
+              .setDescription(
+                "🚫 | **Укажите число! **"
+              )
+              .setColor("RED")
+              .setTimestamp()
+              .setFooter(
+                message.author.username,
+                message.author.displayAvatarURL
+              )
+          );
+    if (isNaN(args[0])) return message.reply
+    new Discord.RichEmbed()
+              .setDescription(
+                "🚫 | **Укажите число больше нуля! **"
+              )
+              .setColor("RED")
+              .setTimestamp()
+              .setFooter(
+                message.author.username,
+                message.author.displayAvatarURL
+              )
+          );
 
     let user = message.mentions.users.first() || message.author
 
