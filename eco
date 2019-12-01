@@ -14,8 +14,20 @@ module.exports.run = async (bot, message, args) => {
     if (isNaN(args[0])) return message.reply('Укажите число, больше 0')
 
     let user = message.mentions.users.first() || message.author
-    message.channel.send('Добавлено успешно' + args[0] + ' to ' + user)
+
     db.add(`money_${message.guild.id}_${message.author.id}`, args[0])
+
+let embed = new Discord.RichEmbed()
+
+    .setAuthor(`Монеты добавлены! !`, message.author.displayAvatarURL)
+
+    .addField(`Amount`, `${args[0]}$`)
+
+    .addField(`Баланс обнлвлен`, `${bal}$`)
+
+    .setColor("RANDOM") // random = "RANDOM"
+
+    .setTimestamp()
 
 };
 module.exports.help = {
